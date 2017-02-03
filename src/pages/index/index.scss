@@ -1,0 +1,71 @@
+$themeColor:#f9bb18;
+page {
+    background: #ededed;
+}
+
+view {
+    padding: 0 20rpx;
+    background: #ffffff;
+}
+
+.logo {
+    text-align: center;
+    // margin-top: 90rpx;
+    padding-top: 50rpx;
+    image {
+        width: 145rpx;
+        height: 200rpx;
+    }
+}
+
+.slogan {
+    text-align: center;
+    padding: 30rpx 0 60rpx;
+    text {
+        color: #666666;
+        font-size: 26rpx;
+    }
+}
+
+.search {
+    text-align: center;
+    padding-bottom: 60rpx;
+    margin-bottom: 30rpx;
+    height: 60rpx;
+    navigator {
+        border: 2rpx solid $themeColor;
+        border-radius: 30rpx;
+        font-size: 28rpx;
+        color: $themeColor;
+        padding: 15rpx 180rpx;
+    }
+}
+
+.title {
+    margin-bottom: 10rpx;
+    padding: 10rpx 0;
+    text {
+        padding-left: 15rpx;
+        margin-left: 20rpx;
+        border-left: 4rpx solid $themeColor;
+    }
+}
+
+.img {
+    margin-bottom: 15rpx;
+    text-align: center;
+    padding: 0 30rpx;
+    position: relative;
+    image {
+        width: 100%;
+    }
+    text {
+        position: absolute;
+        bottom: 40rpx;
+        left: 50rpx;
+        color: #333333;
+        font-size: 36rpx;
+    }
+}
+
+

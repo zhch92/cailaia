@@ -1,0 +1,34 @@
+<view class="logo">
+    <image src="../../image/logo.png"></image>
+</view>
+<view class="slogan">
+    <text>发现属于自己的投资方式</text>
+</view>
+<view class="search">
+    <navigator url="../search/search" hover-class="navigator-hover">
+        <icon type="search" size="13" color="#f9bb18"></icon>
+        请输入股票代码／名称</navigator>
+</view>
+<view class="title"> <text>量化策略</text> </view>
+<view class="img" wx:for="{{strategyList}}" wx:key='{{index}}'>
+    <navigator url="../tactics/tactics?strategyId={{item.strategyId}}" hover-class="navigator-hover">
+        <image src="{{item.staticImageUrl}}"></image>
+        <text>{{item.strategyName}}</text>    
+    </navigator>
+</view>
+
+<!-- <view class="canvas">
+    <canvas canvas-id="earningsCanvas1" style="border: 1px solid #ccc;width:320px;height: 150px;" />
+</view>
+<view class="canvas-wrap">
+    <view class="canvas">
+        <canvas canvas-id="earningsCanvas2" style="width:200px;height: 120px;" />
+        <view class="right">
+            <view class="title">历史收益率</view>
+            <view class="number">564.21%</view>
+            <view class="title">月均收益率</view>
+            <view class="number">64.21%</view>
+        </view>
+    </view>
+</view>
+ -->

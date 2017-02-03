@@ -1,0 +1,316 @@
+$themeColor:#f9bb18;
+page {
+    padding-bottom: 90rpx;
+    min-height: 100%;
+    // overflow: hidden;
+}
+
+.title {
+    margin-bottom: 10rpx;
+    padding: 10rpx;
+    font-size: 36rpx;
+    position: relative;
+    .main-title {
+        padding-left: 15rpx;
+        margin-left: 20rpx;
+        border-left: 4rpx solid #f9bb18;
+        font-size: 28rpx;
+        width: 35%;
+    }
+    .deputy-title {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -12rpx;
+        font-size: 24rpx;
+        color: #666666;
+        text-align: right;
+        padding-right: 10rpx;
+    }
+}
+
+.text-wrap {
+    margin: 10rpx;
+    background: #f4f5f7;
+    padding: 20rpx;
+    .text {
+        margin-bottom: 10rpx;
+        font-size: 24rpx;
+        color: #333;
+        line-height: 30rpx;
+    }
+}
+
+.img {
+    margin-bottom: 15rpx;
+    text-align: center;
+    padding: 0 30rpx;
+    image {
+        width: 100%;
+    }
+}
+.canvas-table {
+    padding: 5px 20rpx;
+    border-top: 2rpx solid #ccc;
+    canvas {
+        border-color: 2rpx solid #ccc;
+        width: 100%;
+    }
+}
+.canvas-wrap {
+    padding: 20rpx;
+    .canvas {
+        border: 2rpx solid #cccccc;
+        position: relative;
+        .right{
+            position: absolute;
+            right: 0;
+            top: 12rpx;
+            border-left: 2rpx solid #cccccc;
+            padding: 10rpx 45rpx;
+            text-align: left;
+            .title{
+                font-size: 24rpx;
+                color: #666666;
+                margin-bottom: 10rpx;
+                &:first-child{
+                    padding-top: 10rpx;
+                }
+            }
+            .number{
+                font-size: 36rpx;
+                color: #e64f30;
+                padding-bottom: 10rpx;
+                &:first-child{
+                    padding-top: 10rpx;
+                }
+
+
+            }
+        }
+    }
+}
+.table-wrap {
+    padding: 40rpx 10rpx;
+    border-top: 2rpx solid #ccc;
+    border-bottom: 2rpx solid #ccc;
+    .flex-wrp {
+        display: flex;
+        justify-content: space-between;
+        color: #666;
+        view {
+            width: 25%;
+            font-size: 28rpx;
+            text-align: center;
+            line-height: 40rpx;
+            margin-bottom: 10rpx;
+            text {
+                border-top: 2rpx solid transparent;
+            }
+            &.active {
+                text {
+                    border-color: #333;
+                    color: #333;
+                }
+            }
+        }
+        &.number {
+            color: #333;
+        }
+        &.number-color {
+            color: #df4e31;
+        }
+    }
+    .hint {
+        text-align: right;
+        font-size: 24rpx;
+        color: $themeColor;
+        line-height: 30rpx;
+        image{
+            width: 28rpx;
+            height: 28rpx;
+            position: relative;
+            top: 6rpx;
+        }
+    }
+}
+
+.row-wrap {
+    padding: 10rpx 10rpx;
+    border-top: 2rpx solid #ccc;
+    border-bottom: 2rpx solid #ccc;
+    .flex-wrp {
+        display: flex;
+        justify-content: space-between;
+        color: #666;
+        view {
+            width: 25%;
+            font-size: 28rpx;
+            text-align: center;
+            line-height: 40rpx;
+            margin-bottom: 10rpx;
+            text {
+                position: relative;
+                top: 6rpx;
+                padding: 15rpx 0;
+                border-top: 2rpx solid transparent;
+            }
+            &.active {
+                text {
+                    border-color: #333;
+                    color: #333;
+                }
+            }
+        }
+        &.number {
+            color: #333;
+        }
+    }
+    &.wrp-bg {
+        background: #eeeeee;
+        border: none;
+    }
+}
+
+.row-wrap-three {
+    padding: 10rpx 10rpx;
+    text-align: center;
+    border-top: 2rpx solid #ccc;
+    // border-bottom: 2rpx solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    .flex-left {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text{
+            padding: 10rpx;
+            background:red;
+            border-radius: 4px;
+                font-size: 24rpx;
+
+        }
+        &:last-child{
+            text{
+                color: #ffffff;
+                background:#e9a901;
+            }
+        }
+    }
+    .flex-middle {
+        width: 60%;
+        .flex-wrp {
+            display: flex;
+            view {
+                width: 33%;
+                font-size: 28rpx;
+                text-align: center;
+                line-height: 30rpx;
+                margin-top: 10rpx;
+                color: #333;
+                text {
+                    position: relative;
+                    top: 6rpx;
+                    padding: 15rpx 0;
+                    border-top: 2rpx solid transparent;
+                }
+                &.active {
+                    text {
+                        border-color: #333;
+                        color: #333;
+                    }
+                }
+            }
+            &.number {
+                color: #999;
+            }
+        }
+    }
+    .flex-right {
+        width: 20%;
+    }
+}
+
+.tab {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    line-height: 90rpx;
+    view {
+        width: 50%;
+        text-align: center;
+    }
+    .left {
+        background: #ffffff;
+    }
+    .right {
+        background: $themeColor;
+        color: #ffffff;
+    }
+}
+
+.stage {
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+.shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 99;
+}
+
+.shade-content {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    height: 35%;
+    margin-left: -40%;
+    z-index: 200;
+    background-size: 100% 100%;
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50rpx;
+        height: 50rpx;
+        z-index: 102;
+    }
+    .shade-img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        canvas{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        view {
+            position: absolute;
+            bottom: 20rpx;
+            z-index: 103;
+            text-align: center;
+            font-size: 36rpx;
+            color: $themeColor;
+            width: 100%;
+        }
+    }
+    image {
+        width: 100%;
+        height: 100%;
+    }
+}

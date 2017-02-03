@@ -1,0 +1,206 @@
+<view class="title">
+    <view class="main-title">策略简介</view>
+    <view class="deputy-title">击败了财来啊
+        <text>99。99%</text>的投资组合</view>
+</view>
+<view class="text-wrap">
+    <view class="text">同三个有效因子时满足以下</view>
+    <view class="text">同三个有效因子时满足以下</view>
+    <view class="text">同三个有效因子时满足以下同三个有效因子时满足以下</view>
+    <view class="text">同三个有效因子时满足以下</view>
+    <view class="text">同三个有效因子时满足以下同三个有效因子时满足以下同三个有效因子时满足以下</view>
+    <view class="text">同三个有效因子时满足以下</view>
+</view>
+<view class="title">
+    <view class="main-title">回测收益</view>
+    <view class="deputy-title"  data-str='回测明细' bindtap="showShade">回测明细</view>
+</view>
+<view class="canvas-table" hidden="{{shade}}">
+   <canvas canvas-id="myCanvas"  style="border: 1px solid #ccc;height: 150px;"/>  
+</view>
+<view class="canvas-wrap">
+    <view class="canvas"   hidden="{{shade}}">
+        <canvas canvas-id="earningsCanvas2" style="width:200px;height: 120px;" />
+        <view class="right">
+            <view class="title">历史收益率</view>
+            <view class="number">564.21%</view>
+            <view class="title">月均收益率</view>
+            <view class="number">64.21%</view>
+        </view>
+    </view>
+</view>
+<view class="table-wrap">
+    <view class="flex-wrp">
+        <view>基准波动率</view>
+        <view>最大回撤</view>
+        <view>阿尔法α</view>
+        <view>贝塔β</view>
+    </view>
+    <view class="flex-wrp number">
+        <view>11</view>
+        <view>12%</view>
+        <view>13</view>
+        <view>15</view>
+    </view>
+    <view class="flex-wrp">
+        <view>夏普比率</view>
+        <view>索提诺比率</view>
+        <view>信息比率</view>
+        <view>策略波动率</view>
+    </view>
+    <view class="flex-wrp number">
+        <view>11</view>
+        <view>12%</view>
+        <view>13</view>
+        <view>15</view>
+    </view>
+    <view class="hint">
+    <navigator url="../risk/risk">
+        <image src="../../image/queation.png"></image>点击了解风险指标
+    </navigator></view>
+</view>
+<view class="title">
+    <view class="main-title">实战收益</view>
+    <view class="deputy-title">开始时间:2015-04-01</view>
+</view>
+
+<view class="row-wrap">
+    <view class="flex-wrp">
+        <view class="{{date==1?'active':''}}">
+            <text bindtap="switchDate" data-num='1'>近一周</text>
+        </view>
+        <view  class="{{date==2?'active':''}}">
+            <text bindtap="switchDate" data-num='2'>近一月</text>
+        </view>
+        <view  class="{{date==3?'active':''}}">
+            <text bindtap="switchDate" data-num='3'>近三月</text>
+        </view>
+        <view  class="{{date==4?'active':''}}">
+            <text bindtap="switchDate" data-num='4'>创建以来</text>
+        </view>
+    </view>
+</view>
+<view class="canvas-table"  hidden="{{shade}}">
+   <canvas canvas-id="myCanvas2"  style="border: 1px solid #ccc;height: 150px;"/>  
+</view>
+<view class="title">
+    <view class="main-title">最近调仓
+        <text>2016-05-11</text>
+    </view>
+    <view class="deputy-title">更多 》</view>
+</view>
+<view class="row-wrap-three">
+    <view class="flex-left"><text>买入</text></view>
+    <view class="flex-middle">
+        <view class="flex-wrp  number">
+            <view>基准波动率</view>
+            <view>最大回撤</view>
+            <view>阿尔法α</view>
+        </view>
+        <view class="flex-wrp">
+            <view>11</view>
+            <view>12%</view>
+            <view>13</view>
+        </view>
+    </view>
+    <view class="flex-left"><text>跟买</text></view>
+</view>
+<view class="row-wrap-three">
+    <view class="flex-left"><text>买入</text></view>
+    <view class="flex-middle">
+        <view class="flex-wrp  number">
+            <view>基准波动率</view>
+            <view>最大回撤</view>
+            <view>阿尔法α</view>
+        </view>
+        <view class="flex-wrp">
+            <view>11</view>
+            <view>12%</view>
+            <view>13</view>
+        </view>
+    </view>
+    <view class="flex-left"><text>跟买</text></view>
+</view>
+<view class="row-wrap-three">
+    <view class="flex-left"><text>买入</text></view>
+    <view class="flex-middle">
+        <view class="flex-wrp  number">
+            <view>基准波动率</view>
+            <view>最大回撤</view>
+            <view>阿尔法α</view>
+        </view>
+        <view class="flex-wrp">
+            <view>11</view>
+            <view>12%</view>
+            <view>13</view>
+        </view>
+    </view>
+    <view class="flex-left"><text>跟买</text></view>
+</view>
+<view class="row-wrap-three">
+    <view class="flex-left"><text>买入</text></view>
+    <view class="flex-middle">
+        <view class="flex-wrp  number">
+            <view>基准波动率</view>
+            <view>最大回撤</view>
+            <view>阿尔法α</view>
+        </view>
+        <view class="flex-wrp">
+            <view>11</view>
+            <view>12%</view>
+            <view>13</view>
+        </view>
+    </view>
+    <view class="flex-left"><text>跟买</text></view>
+</view>
+<view class="row-wrap  wrp-bg">
+    <view class="flex-wrp">
+        <view>
+            <text>股票/仓位</text>
+        </view>
+        <view>
+            <text>盈亏</text>
+        </view>
+        <view>
+            <text>持仓/可用</text>
+        </view>
+        <view>
+            <text>成本/现价</text>
+        </view>
+    </view>
+</view>
+<view class="table-wrap">
+    <view class="flex-wrp number-color">
+        <view>夏普比率</view>
+        <view>索提诺比率</view>
+        <view>信息比率</view>
+        <view>策略波动率</view>
+    </view>
+    <view class="flex-wrp  number-color">
+        <view>11</view>
+        <view>12%</view>
+        <view>13</view>
+        <view>15</view>
+    </view>
+</view>
+<view class="tab">
+    <view class="left" data-str='持仓记录' bindtap="showShade">历史持仓</view>
+    <view class="right">购买(0元/月)</view>
+</view>
+
+<block wx:if="{{shade}}">
+  <view class="shade"></view>
+<view class="shade-content">
+    <view class="close">
+        <image src="../../image/close.png" bindtap="colseShade"></image>
+    </view>
+    <view class="shade-img">
+    <image src="../../image/shade.png"></image>
+    
+        <view>{{detail}}</view>
+    </view>
+</view></block>
+
+
+
+

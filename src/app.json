@@ -1,0 +1,18 @@
+{
+    "pages": [
+        "pages/search/search",
+        "pages/index/index",
+        
+        "pages/tactics/tactics",
+        "pages/stock/stock",
+        "pages/risk/risk"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f9bb18",
+        "navigationBarTitleText": "财来啊",
+        "navigationBarTextStyle": "#ffffff",
+        "disableScroll": "false"
+    }
+
+}

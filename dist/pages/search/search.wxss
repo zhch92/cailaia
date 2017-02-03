@@ -1,0 +1,77 @@
+page {
+  background: #ffffff; }
+
+.search {
+  background: #ededed;
+  text-align: center;
+  height: 60rpx;
+  padding: 30rpx;
+  position: relative; }
+  .search input {
+    border: 2rpx solid #f9bb18;
+    border-radius: 8rpx;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+    background: #ffffff;
+    text-align: left;
+    font-size: #333333; }
+  .search icon {
+    position: absolute;
+    right: 50rpx;
+    top: 45rpx;
+    z-index: 99; }
+
+.searh-hint .hint-text {
+  width: 50%;
+  margin: 130rpx auto 20rpx;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 10rpx;
+  color: #666; }
+
+.searh-hint .hint-img {
+  text-align: center; }
+  .searh-hint .hint-img image {
+    width: 100rpx;
+    height: 100rpx; }
+  .searh-hint .hint-img view {
+    color: #cccccc; }
+
+.search-result {
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #cccccc;
+  font-size: 26rpx;
+  color: #333; }
+
+.search-result-no {
+  text-align: center;
+  margin-top: 80rpx; }
+  .search-result-no image {
+    width: 72rpx;
+    height: 63rpx; }
+  .search-result-no text {
+    font-size: 30rpx;
+    color: #666666;
+    position: relative;
+    top: -15rpx;
+    margin-left: 20rpx; }
+
+.history {
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #cccccc;
+  font-size: 26rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between; }
+  .history .clear {
+    width: 50rpx;
+    width: 50rpx;
+    text-align: center; }
+
+.clear-history {
+  text-align: center;
+  margin-top: 80rpx; }
+  .clear-history text {
+    color: #cccccc;
+    font-size: 36rpx; }

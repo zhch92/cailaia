@@ -1,0 +1,43 @@
+[{
+	name: '张超1',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}, {
+	name: '张超2',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}, {
+	name: '张超3',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}, {
+	name: '张超5',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}, {
+	name: '张超6',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}, {
+	name: '张超7',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}, {
+	name: '张超8',
+	age: '24',
+	sex: '男',
+	profession: '前端开发工程师',
+	handle: '删除'
+}]

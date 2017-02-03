@@ -1,0 +1,54 @@
+page {
+  background: #ededed; }
+
+view {
+  padding: 0 20rpx;
+  background: #ffffff; }
+
+.logo {
+  text-align: center;
+  padding-top: 50rpx; }
+  .logo image {
+    width: 145rpx;
+    height: 200rpx; }
+
+.slogan {
+  text-align: center;
+  padding: 30rpx 0 60rpx; }
+  .slogan text {
+    color: #666666;
+    font-size: 26rpx; }
+
+.search {
+  text-align: center;
+  padding-bottom: 60rpx;
+  margin-bottom: 30rpx;
+  height: 60rpx; }
+  .search navigator {
+    border: 2rpx solid #f9bb18;
+    border-radius: 30rpx;
+    font-size: 28rpx;
+    color: #f9bb18;
+    padding: 15rpx 180rpx; }
+
+.title {
+  margin-bottom: 10rpx;
+  padding: 10rpx 0; }
+  .title text {
+    padding-left: 15rpx;
+    margin-left: 20rpx;
+    border-left: 4rpx solid #f9bb18; }
+
+.img {
+  margin-bottom: 15rpx;
+  text-align: center;
+  padding: 0 30rpx;
+  position: relative; }
+  .img image {
+    width: 100%; }
+  .img text {
+    position: absolute;
+    bottom: 40rpx;
+    left: 50rpx;
+    color: #333333;
+    font-size: 36rpx; }

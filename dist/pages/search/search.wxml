@@ -1,0 +1,31 @@
+<view class="search">
+    <input placeholder="搜索股票代码／名称" placeholder-style="color:#cccccc;text-align:left;" bindinput="bindKeyInput" />
+    <icon type="search" size="13" color="#f9bb18"></icon>
+</view>
+<view class="searh-hint" wx:if='{{searchHint}}'>
+    <view class="hint-text">
+        <text>你可以搜索</text>
+    </view>
+    <view class="hint-img">
+        <image src="../../image/gupiao.png"></image>
+        <view>股票</view>
+    </view>
+</view>
+<view class="search-result" wx:if='{{!searchHint}}' wx:for="{{searchResult}}" wx:key='{{index}}' data-id="{{item.id}}" data-name="{{item.prodName}}" data-code="{{item.prodCode}}" bindtap="bindSkip">
+    <text>{{item.prodName}} ({{item.prodCode}})</text>
+</view>
+<view class="search-result-no" wx:if="{{searchResultNo}}">
+    <image src="../../image/search-failed.png"></image>
+    <text>未搜索到相关股票</text>
+</view>
+<block wx:if="{{!searchHint}}">
+    <view class="history" wx:for="{{history}}" wx:key='{{index}}' data-id="{{item.id}}">
+        <text>{{item.prodName}} ({{item.prodCode}})</text>
+        <view class="clear">
+            <icon type="clear" size="13" color="#f9bb18" data-index="{{index}}" bindtap="clearHistory"></icon>
+        </view>
+    </view>
+    <view class='clear-history'>
+        <text bindtap="clearHistoryAll">清空历史记录</text>
+    </view>
+</block>

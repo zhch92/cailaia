@@ -1,0 +1,97 @@
+$themeColor:#f9bb18;
+page {
+    background: #ffffff;
+}
+
+.search {
+    background: #ededed;
+    text-align: center;
+    height: 60rpx;
+    padding: 30rpx;
+    position: relative;
+    input {
+        border: 2rpx solid $themeColor;
+        border-radius: 8rpx;
+        padding: 0 20rpx;
+        font-size: 28rpx;
+        background: #ffffff;
+        text-align: left;
+        font-size: #333333;
+        // height: 60rpx;
+    }
+    icon {
+        position: absolute;
+        right: 50rpx;
+        top: 45rpx;
+        z-index: 99;
+    }
+}
+
+.searh-hint {
+    .hint-text {
+        width: 50%;
+        margin: 130rpx auto 20rpx;
+        border-bottom: 1px solid #cccccc;
+        text-align: center;
+        font-size: 30rpx;
+        padding: 10rpx;
+        color: #666;
+    }
+    .hint-img {
+        text-align: center;
+        image {
+            width: 100rpx;
+            height: 100rpx;
+        }
+        view {
+            color: #cccccc;
+        }
+    }
+}
+
+.search-result {
+    padding: 20rpx 30rpx;
+    border-bottom: 1rpx solid #cccccc;
+    font-size: 26rpx;
+    color: #333;
+}
+
+.search-result-no {
+    text-align: center;
+    margin-top: 80rpx;
+    image {
+        width: 72rpx;
+        height: 63rpx;
+    }
+    text {
+        font-size: 30rpx;
+        color: #666666;
+        position: relative;
+        top: -15rpx;
+        margin-left: 20rpx;
+    }
+}
+
+.history {
+    padding: 20rpx 30rpx;
+    border-bottom: 1rpx solid #cccccc;
+    font-size: 26rpx;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    .clear {
+        width: 50rpx;
+        width: 50rpx;
+        text-align: center;
+        
+    }
+}
+
+.clear-history {
+    text-align: center;
+    margin-top: 80rpx;
+    text {
+        color: #cccccc;
+        font-size: 36rpx;
+    }
+}
