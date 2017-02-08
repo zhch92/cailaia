@@ -45,12 +45,12 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(59);
+	module.exports = __webpack_require__(60);
 
 
 /***/ },
 
-/***/ 59:
+/***/ 60:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71,6 +71,7 @@
 	}
 
 	module.exports = {
+
 		formatTime: formatTime
 	};
 

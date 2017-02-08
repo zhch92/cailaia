@@ -40,66 +40,17 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	module.exports = __webpack_require__(63);
 
 
 /***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
-	//index.js  
-	var util = __webpack_require__(2);
-	//获取应用实例  
-	var app = getApp();
-	Page({
-	    data: {
-	        page: '1'
-	    },
-	    onLoad: function onLoad() {
-
-	        wx.request({
-	            url: 'https://xueqiu.com/',
-	            method: 'GET',
-	            data: { 'category': 5 },
-	            header: {
-	                'Accept': 'application/json'
-	            },
-	            success: function success(res) {
-	                console.log(res.data);
-	                that.data.items = res.data;
-	            }
-	        });
-
-	        var password = 'pageNum:1,pageSize:10,key:www.cailaia.com';
-	        if (password === "" || password === null) {
-	            wx.showModal({
-	                title: '提示',
-	                content: '密码不能为空',
-	                confirmColor: '#118EDE',
-	                showCancel: false,
-	                success: function success(res) {
-	                    if (res.confirm) {
-	                        //console.log('用户点击确定')  
-	                    }
-	                }
-	            });
-	            return false;
-	        } else {
-	            password = util.md5(password);
-	            console.log(password);
-	        }
-	    }
-
-	});
-
-/***/ },
-/* 2 */
+/***/ 2:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -319,5 +270,58 @@
 
 	module.exports.md5 = md5;
 
+/***/ },
+
+/***/ 63:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	//index.js  
+	var util = __webpack_require__(2);
+	//获取应用实例  
+	var app = getApp();
+	Page({
+	    data: {
+	        page: '1'
+	    },
+	    onLoad: function onLoad() {
+
+	        wx.request({
+	            url: 'https://xueqiu.com/',
+	            method: 'GET',
+	            data: { 'category': 5 },
+	            header: {
+	                'Accept': 'application/json'
+	            },
+	            success: function success(res) {
+	                console.log(res.data);
+	                that.data.items = res.data;
+	            }
+	        });
+
+	        var password = 'pageNum:1,pageSize:10,key:www.cailaia.com';
+	        if (password === "" || password === null) {
+	            wx.showModal({
+	                title: '提示',
+	                content: '密码不能为空',
+	                confirmColor: '#118EDE',
+	                showCancel: false,
+	                success: function success(res) {
+	                    if (res.confirm) {
+	                        //console.log('用户点击确定')  
+	                    }
+	                }
+	            });
+	            return false;
+	        } else {
+	            password = util.md5(password);
+	            console.log(password);
+	        }
+	    }
+
+	});
+
 /***/ }
-/******/ ]);
+
+/******/ });

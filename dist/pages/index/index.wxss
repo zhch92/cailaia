@@ -39,16 +39,63 @@ view {
     margin-left: 20rpx;
     border-left: 4rpx solid #f9bb18; }
 
+.img-list {
+  padding: 20rpx; }
+
 .img {
   margin-bottom: 15rpx;
   text-align: center;
-  padding: 0 30rpx;
-  position: relative; }
-  .img image {
-    width: 100%; }
-  .img text {
+  position: relative;
+  padding: 0;
+  border: 2rpx solid #ddd; }
+  .img .price {
     position: absolute;
-    bottom: 40rpx;
-    left: 50rpx;
-    color: #333333;
-    font-size: 36rpx; }
+    top: 0;
+    left: 0;
+    width: 365rpx;
+    font-size: 24rpx;
+    background: #f9bb18;
+    color: #ffffff;
+    padding: 10rpx 5rpx;
+    text-align: left; }
+    .img .price text {
+      display: inline-block;
+      width: 50%; }
+    .img .price .line {
+      position: absolute;
+      top: 50%;
+      left: 5rpx;
+      display: block;
+      width: 50%;
+      border-bottom: 1px solid #ffffff; }
+  .img image {
+    width: 100%;
+    height: 240px; }
+  .img .text {
+    display: block;
+    padding: 20rpx 10rpx;
+    font-size: 30rpx;
+    text-align: left;
+    border-top: 1px solid #dddddd;
+    position: relative; }
+    .img .text .color {
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+      margin-right: 5px;
+      display: inline-block; }
+    .img .text text {
+      color: #666666;
+      font-size: 26rpx; }
+    .img .text .color1 {
+      background: #9c3040; }
+    .img .text .color2 {
+      background: #4d71a5; }
+    .img .text .details {
+      position: absolute;
+      right: 10rpx;
+      top: 15rpx;
+      padding: 5rpx;
+      border: 2rpx solid #f9bb18;
+      border-radius: 4rpx;
+      color: #f9bb18; }

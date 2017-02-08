@@ -9,14 +9,27 @@
         <icon type="search" size="13" color="#f9bb18"></icon>
         请输入股票代码／名称</navigator>
 </view>
-<view class="title"> <text>量化策略</text> </view>
-<view class="img" wx:for="{{strategyList}}" wx:key='{{index}}'>
-    <navigator url="../tactics/tactics?strategyId={{item.strategyId}}" hover-class="navigator-hover">
-        <image src="{{item.staticImageUrl}}"></image>
-        <text>{{item.strategyName}}</text>    
-    </navigator>
+<view class="title">
+    <text>量化策略</text>
 </view>
+<view class="img-list">
+    <view class="img" wx:for="{{strategyList}}" wx:key='{{index}}'>
+        <navigator url="../tactics/tactics?strategyId={{item.strategyId}}" hover-class="navigator-hover">
+            <view class="price">
+                <text>原价:{{item.orgPrice}}/月<text class="line"></text>
+                </text><text>现价:{{item.discountPrice}}／月</text>
+            </view>
+            <image src="{{item.staticImageUrl}}"></image>
+            <div class="text">{{item.strategyName}} <text class="color color1"></text>
+<text>基准收益</text>
+            <text class="color color2"></text>
+<text>策略收益</text>
 
+                <text class="details">详情</text>
+            </div>
+        </navigator>
+    </view>
+</view>
 <!-- <view class="canvas">
     <canvas canvas-id="earningsCanvas1" style="border: 1px solid #ccc;width:320px;height: 150px;" />
 </view>

@@ -1,8 +1,7 @@
 {
     "pages": [
-        "pages/search/search",
         "pages/index/index",
-        
+        "pages/search/search",
         "pages/tactics/tactics",
         "pages/stock/stock",
         "pages/risk/risk"

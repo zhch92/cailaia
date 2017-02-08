@@ -45,18 +45,18 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(58);
+	module.exports = __webpack_require__(59);
 
 
 /***/ },
 
-/***/ 58:
+/***/ 59:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	//logs.js
-	var util = __webpack_require__(59);
+	var util = __webpack_require__(60);
 	Page({
 	  data: {
 	    logs: []
@@ -72,7 +72,7 @@
 
 /***/ },
 
-/***/ 59:
+/***/ 60:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -93,6 +93,7 @@
 	}
 
 	module.exports = {
+
 		formatTime: formatTime
 	};
 

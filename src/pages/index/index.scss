@@ -51,21 +51,83 @@ view {
     }
 }
 
+.img-list {
+    padding: 20rpx;
+}
+
 .img {
     margin-bottom: 15rpx;
     text-align: center;
-    padding: 0 30rpx;
     position: relative;
+    padding: 0;
+    border: 2rpx solid #ddd;
+    .price {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 365rpx;
+        font-size: 24rpx;
+        background: $themeColor;
+        color: #ffffff;
+        padding: 10rpx 5rpx;
+        text-align: left;
+        text {
+            display: inline-block;
+            width: 50%;
+        }
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 5rpx;
+            display: block;
+            width: 50%;
+            border-bottom: 1px solid #ffffff;
+        }
+    }
     image {
         width: 100%;
+        height: 240px;
     }
-    text {
-        position: absolute;
-        bottom: 40rpx;
-        left: 50rpx;
-        color: #333333;
-        font-size: 36rpx;
+    .text {
+        display: block;
+        padding: 20rpx 10rpx;
+        font-size: 30rpx;
+        text-align: left;
+        border-top: 1px solid #dddddd;
+        position: relative;
+        .color {
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+            margin-right: 5px;
+            display: inline-block;
+            
+        }
+        text{
+          color: #666666;
+            font-size: 26rpx;  
+        }
+        .color1 {
+            background: #9c3040;
+        }
+        .color2 {
+            background: #4d71a5;
+        }
+        .details {
+            position: absolute;
+            right: 10rpx;
+            top: 15rpx;
+            padding: 5rpx;
+            border: 2rpx solid $themeColor;
+            border-radius: 4rpx;
+            color: $themeColor;
+        }
     }
+    // text {
+    //     position: absolute;
+    //     bottom: 40rpx;
+    //     left: 50rpx;
+    //     color: #333333;
+    //     font-size: 36rpx;
+    // }
 }
-
-

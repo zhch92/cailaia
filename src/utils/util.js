@@ -14,5 +14,6 @@ function formatTime(date) {
 }
  
 module.exports = {
+	
 	formatTime: formatTime
 }
