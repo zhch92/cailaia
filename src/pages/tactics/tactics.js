@@ -46,9 +46,9 @@ Page({
             success: function(res) {
                 console.log(res.data)
                 let resData=res.data;
-                // $this.setData({
-                //     strategyList: [...resData.data]
-                // })
+                $this.setData({
+                    strategyList: [...resData.data]
+                })
             }
         })
 
